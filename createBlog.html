@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Create Blog</title>
+	<meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  		<a class="navbar-brand" href="index.html">Awesome blog</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+  			<ul class="navbar-nav mr-justify">
+  				<li class="nav-item">
+  					<a class="nav-link" href="index.html">All <span class="sr-only">(current)</span></a>
+  				</li>
+  				<li class="nav-item active">
+  					<a class="nav-link" href="createBlog.html">Create</a>
+  				</li>
+  			</ul>
+  		</div>
+  	</nav>
+
+	<div class="container">
+		<h3 class="margin-top-5 margin-bottom-5">Create Blog Post</h3>
+		<form>
+			<div class="form-group">
+				<label for="formGroupExampleInput">Title</label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Title goes here...">
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<div class="form-group">
+						<label for="summary">Summary</label>
+						<textarea class="form-control" id="summary" required="true"></textarea>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="form-group">
+						<label for="exampleFormControlFile1">Image</label>
+						<input type="file" class="form-control-file" id="exampleFormControlFile1">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Content</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+			</div>
+
+			<div class="d-flex justify-content-between margin-bottom-5">
+				<button type="button" class="btn btn-outline-primary">Cancel</button>
+				<button type="button" class="btn btn-primary">Create Post</button>
+			</div>
+		</form>
+
+	</div>
+
+	<footer class="footer">
+  		<div class="container text-center">
+  			<span class="text-muted">&copy; All Rights reserved: By YadavCorp. </span>
+  		</div>
+  	</footer>
+
+</body>
+</html>
